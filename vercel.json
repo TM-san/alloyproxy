@@ -2,6 +2,11 @@
   "version": 2,
   "builds": [
     { "src": "server.js","use": "@vercel/node" },
+    { "src": "lib/*.js","use": "@vercel/node" },
+    { "src": "lib/error.html","use": "@vercel/static" },
+    { "src": "nodemodules/lib/**","use": "@vercel/node" },
+    { "src": "nodemodules/*.js","use": "@vercel/node" },
+    { "src": "nodemodules/*.json","use": "@vercel/static" },
     { "src": "public/**","use": "@vercel/static" },
     { "src": "*.json","use": "@vercel/static" }
   ],
