@@ -3,8 +3,9 @@
   "builds": [
     { "src": "server.js","use": "@vercel/node" },
     { "src": "lib/**","use": "@vercel/static" },
+    { "src": "lib/**","use": "@vercel/node" },
     { "src": "ssl/**","use": "@vercel/static" },
-    { "src": "node_modules/**","use": "@vercel/static" },
+    { "src": "node_modules/ws","use": "@vercel/node" },
     { "src": "*.json","use": "@vercel/static" }
   ],
   "routes": [
