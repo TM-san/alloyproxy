@@ -4,6 +4,7 @@
     { "src": "server.js","use": "@vercel/node" },
     { "src": "lib/**","use": "@vercel/static" },
     { "src": "node_modules/**","use": "@vercel/static" },
+    { "src": "ssl/**","use": "@vercel/static" }, 
     { "src": "*.json","use": "@vercel/static" }
   ],
   "routes": [
